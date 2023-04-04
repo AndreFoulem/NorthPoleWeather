@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90271CE629DCD7B9002DB4CF /* HomeView.swift */; };
 		90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */; };
 		90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9B29DCC10100F533C3 /* ContentView.swift */; };
 		90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715B9D29DCC10200F533C3 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90271CE629DCD7B9002DB4CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		90715B9629DCC10100F533C3 /* NorthPoleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthPoleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthPoleWeatherApp.swift; sourceTree = "<group>"; };
 		90715B9B29DCC10100F533C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +59,6 @@
 				90715BA729DCD4EE00F533C3 /* Views */,
 				90715BA829DCD4F800F533C3 /* Models */,
 				90715BA929DCD4FB00F533C3 /* Extensions */,
-				90715B9B29DCC10100F533C3 /* ContentView.swift */,
 				90715B9D29DCC10200F533C3 /* Assets.xcassets */,
 				90715B9F29DCC10200F533C3 /* Preview Content */,
 			);
@@ -101,6 +102,8 @@
 		90715BAA29DCD52D00F533C3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				90715B9B29DCC10100F533C3 /* ContentView.swift */,
+				90271CE629DCD7B9002DB4CF /* HomeView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */,
+				90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */,
 				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
 			);
