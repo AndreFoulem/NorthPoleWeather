@@ -11,6 +11,7 @@
 		90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9B29DCC10100F533C3 /* ContentView.swift */; };
 		90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715B9D29DCC10200F533C3 /* Assets.xcassets */; };
 		90715BA129DCC10200F533C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715BA029DCC10200F533C3 /* Preview Assets.xcassets */; };
+		90715BB029DCD5C400F533C3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715BAF29DCD5C400F533C3 /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		90715B9B29DCC10100F533C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90715B9D29DCC10200F533C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90715BA029DCC10200F533C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90715BAF29DCD5C400F533C3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */,
+				90715BA729DCD4EE00F533C3 /* Views */,
+				90715BA829DCD4F800F533C3 /* Models */,
+				90715BA929DCD4FB00F533C3 /* Extensions */,
 				90715B9B29DCC10100F533C3 /* ContentView.swift */,
 				90715B9D29DCC10200F533C3 /* Assets.xcassets */,
 				90715B9F29DCC10200F533C3 /* Preview Content */,
@@ -65,6 +70,60 @@
 				90715BA029DCC10200F533C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90715BA729DCD4EE00F533C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90715BAA29DCD52D00F533C3 /* Main */,
+				90715BAC29DCD54000F533C3 /* Nav  */,
+				90715BAE29DCD55E00F533C3 /* Components */,
+				90715BAD29DCD55100F533C3 /* Details */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90715BA829DCD4F800F533C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90715BA929DCD4FB00F533C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90715BAF29DCD5C400F533C3 /* Color+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90715BAA29DCD52D00F533C3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		90715BAC29DCD54000F533C3 /* Nav  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Nav ";
+			sourceTree = "<group>";
+		};
+		90715BAD29DCD55100F533C3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		90715BAE29DCD55E00F533C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */,
+				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
