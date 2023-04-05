@@ -28,7 +28,7 @@ struct HomeView: View {
           Text("Montreal")
             .font(.largeTitle)
           VStack {
-            Text("19°" + "\n" + "Mostly Clear")
+            Text(mainString)
             Text("H:24°  L:18°")
               .font(.title3.weight(.semibold))
           }
@@ -39,6 +39,29 @@ struct HomeView: View {
       }//zstack
       
     }//body
+}
+
+extension HomeView {
+  
+  private var mainString: AttributedString {
+    var string = AttributedString("19°" + "\n " + "Mostly Clear")
+    
+    if let temp = string.range(of: "19°") {
+      string[temp].font = .system(size: 96, weight: .thin)
+      string[temp].foregroundColor = .primary
+    }
+    if let pipe = string.range(of: " | ") {
+      string[pipe].font = .title3.weight(.semibold)
+      string[pipe].foregroundColor = .secondary
+    }
+    if let weather = string.range(of: "Mostly Clear") {
+      string[weather].font = .title3.weight(.semibold)
+      string[weather].foregroundColor = .secondary
+    }
+    
+    return string
+  }
+  
 }
 
 struct HomeView_Previews: PreviewProvider {
