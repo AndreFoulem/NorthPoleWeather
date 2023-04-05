@@ -12,8 +12,8 @@ struct ForecastView: View {
       ScrollView {
         
       }
+      .backgroundBlur(radius: 20, opaque: true)
       .background(Color.bottomSheetBackground)
-      .background(Blur(radius: 25, opaque: true))
       .clipShape(RoundedRectangle(cornerRadius: 44))
       .overlay {
         // MARK: Bottom Sheet Separator
@@ -27,8 +27,8 @@ struct ForecastView: View {
       .overlay {
         RoundedRectangle(cornerRadius: 10)
           .fill(.black.opacity(0.3))
-          .frame(width: 48, height: 5)
-          .frame(height: 20)
+          .frame(width: 60, height: 10)
+          .frame(height: 30)
           .frame(maxHeight: .infinity, alignment: .top)
          
       }
