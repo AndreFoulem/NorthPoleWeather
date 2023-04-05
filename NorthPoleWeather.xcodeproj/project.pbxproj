@@ -13,6 +13,8 @@
 		90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715B9D29DCC10200F533C3 /* Assets.xcassets */; };
 		90715BA129DCC10200F533C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715BA029DCC10200F533C3 /* Preview Assets.xcassets */; };
 		90715BB029DCD5C400F533C3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715BAF29DCD5C400F533C3 /* Color+.swift */; };
+		90D0D2B929DE0D7E00332A54 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D0D2B829DE0D7E00332A54 /* Blur.swift */; };
+		90D0D2BB29DE0EC700332A54 /* viewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D0D2BA29DE0EC700332A54 /* viewModifiers.swift */; };
 		90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */; };
 		90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3F229DDD8F10081B43C /* Shapes.swift */; };
 		90FBC3F629DDE2730081B43C /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 90FBC3F529DDE2730081B43C /* BottomSheet */; };
@@ -28,6 +30,8 @@
 		90715B9D29DCC10200F533C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90715BA029DCC10200F533C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90715BAF29DCD5C400F533C3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		90D0D2B829DE0D7E00332A54 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		90D0D2BA29DE0EC700332A54 /* viewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiers.swift; sourceTree = "<group>"; };
 		90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabBar.swift; sourceTree = "<group>"; };
 		90FBC3F229DDD8F10081B43C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		90FBC3F829DDE34B0081B43C /* BottomSheetSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetSetup.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				90715BAF29DCD5C400F533C3 /* Color+.swift */,
+				90D0D2BA29DE0EC700332A54 /* viewModifiers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 		90715BAE29DCD55E00F533C3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				90D0D2B829DE0D7E00332A54 /* Blur.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -240,7 +246,9 @@
 				90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */,
 				90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */,
 				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
+				90D0D2BB29DE0EC700332A54 /* viewModifiers.swift in Sources */,
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
+				90D0D2B929DE0D7E00332A54 /* Blur.swift in Sources */,
 				90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */,
 				90FBC3FE29DDE54B0081B43C /* ForecastView.swift in Sources */,
 			);

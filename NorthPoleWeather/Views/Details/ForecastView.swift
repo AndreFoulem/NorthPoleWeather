@@ -13,6 +13,7 @@ struct ForecastView: View {
         
       }
       .background(Color.bottomSheetBackground)
+      .background(Blur(radius: 25, opaque: true))
       .clipShape(RoundedRectangle(cornerRadius: 44))
       .overlay {
         // MARK: Bottom Sheet Separator
