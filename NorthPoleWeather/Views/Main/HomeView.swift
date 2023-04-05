@@ -44,11 +44,13 @@ struct HomeView: View {
           BottomSheetView(position: $bottomSheetPosition) {
              Text(bottomSheetPosition.rawValue.formatted())
           } content: {
-//              ForecastView()
+              ForecastView()
           }
 
           // MARK: Tab Bar
-          NPTabBar(action: {})
+          NPTabBar(action: {
+            bottomSheetPosition = .top
+          })
           
         }//zstack
         .navigationBarHidden(true)
