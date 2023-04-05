@@ -12,53 +12,64 @@ struct HomeView: View {
     @State var bottomSheetPosition: BottomSheetPosition = .middle
     @State var bottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
   
+  var bottomSheetTranslationProrated: CGFloat {
+    (bottomSheetTranslation - BottomSheetPosition.middle.rawValue) /
+    (BottomSheetPosition.top.rawValue - BottomSheetPosition.middle.rawValue)
+  }
+  
     var body: some View {
       NavigationView {
-        ZStack {
-          //MARK: Background Color
-          Color.background
-            .ignoresSafeArea()
+        
+        GeometryReader { geometry in
+          let screenHeight = geometry.size.height + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom
           
-          //MARK: Background Img
-          Image("Background")
-            .resizable()
-            .ignoresSafeArea()
-          
-          //MARK: House Img
-          Image("House")
-            .frame(maxHeight: .infinity, alignment: .top)
-            .padding(.top, 257)
-          
-          VStack {
-            Text("Montreal")
-              .font(.largeTitle)
+          ZStack {
+            //MARK: Background Color
+            Color.background
+              .ignoresSafeArea()
+            
+            //MARK: Background Img
+            Image("Background")
+              .resizable()
+              .ignoresSafeArea()
+            
+            //MARK: House Img
+            Image("House")
+              .frame(maxHeight: .infinity, alignment: .top)
+              .padding(.top, 257)
+            
             VStack {
-              Text(mainString)
-              Text("H:24°  L:18°")
-                .font(.title3.weight(.semibold))
+              Text("Montreal")
+                .font(.largeTitle)
+              VStack {
+                Text(mainString)
+                Text("H:24°  L:18°")
+                  .font(.title3.weight(.semibold))
+              }
+              Spacer()
+            }//vs
+            .padding(.top, 51)
+            
+            // MARK: Bottom Sheet
+            BottomSheetView(position: $bottomSheetPosition) {
+               Text(bottomSheetTranslationProrated.formatted())
+            } content: {
+                ForecastView()
             }
-            Spacer()
-          }//vs
-          .padding(.top, 51)
-          
-          // MARK: Bottom Sheet
-          BottomSheetView(position: $bottomSheetPosition) {
-             Text(bottomSheetTranslation.formatted())
-          } content: {
-              ForecastView()
-          }
-          .onBottomSheetDrag { translation in
-            bottomSheetTranslation = translation
-          }
+            .onBottomSheetDrag { translation in
+              bottomSheetTranslation = translation / screenHeight
+            }
 
-          // MARK: Tab Bar
-          NPTabBar(action: {
-            bottomSheetPosition = .top
-          })
-          
-        }//zstack
-        .navigationBarHidden(true)
-      }
+            // MARK: Tab Bar
+            NPTabBar(action: {
+              bottomSheetPosition = .top
+            })
+            
+          }//zstack
+          .navigationBarHidden(true)
+        }//geo
+        
+      }//ns
       
     }//body
 }
