@@ -13,6 +13,15 @@ struct NPTabBar: View {
   var body: some View {
 
       ZStack {
+        // MARK: Arc Shape
+        Arc()
+          .fill(Color.tabBarBackground)
+          .frame(height: 88)
+          .overlay {
+            Arc()
+              .stroke(Color.tabBarBorder, lineWidth: 0.5)
+          }
+        
         HStack {
             // MARK: Expand Button
           Button {
