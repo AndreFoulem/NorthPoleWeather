@@ -15,6 +15,8 @@
 		90715BB029DCD5C400F533C3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715BAF29DCD5C400F533C3 /* Color+.swift */; };
 		90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */; };
 		90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3F229DDD8F10081B43C /* Shapes.swift */; };
+		90FBC3F629DDE2730081B43C /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 90FBC3F529DDE2730081B43C /* BottomSheet */; };
+		90FBC3F929DDE34B0081B43C /* BottomSheetSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3F829DDE34B0081B43C /* BottomSheetSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		90715BAF29DCD5C400F533C3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabBar.swift; sourceTree = "<group>"; };
 		90FBC3F229DDD8F10081B43C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		90FBC3F829DDE34B0081B43C /* BottomSheetSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FBC3F629DDE2730081B43C /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,7 @@
 				90715BA829DCD4F800F533C3 /* Models */,
 				90FBC3F129DDD8DF0081B43C /* Utils */,
 				90715BA929DCD4FB00F533C3 /* Extensions */,
+				90FBC3F729DDE30F0081B43C /* Packages */,
 				90715B9D29DCC10200F533C3 /* Assets.xcassets */,
 				90715B9F29DCC10200F533C3 /* Preview Content */,
 			);
@@ -143,6 +148,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		90FBC3F729DDE30F0081B43C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				90FBC3F829DDE34B0081B43C /* BottomSheetSetup.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +172,9 @@
 			dependencies = (
 			);
 			name = NorthPoleWeather;
+			packageProductDependencies = (
+				90FBC3F529DDE2730081B43C /* BottomSheet */,
+			);
 			productName = NorthPoleWeather;
 			productReference = 90715B9629DCC10100F533C3 /* NorthPoleWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 90715B8D29DCC10100F533C3;
+			packageReferences = (
+				90FBC3F429DDE2730081B43C /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 90715B9729DCC10100F533C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */,
+				90FBC3F929DDE34B0081B43C /* BottomSheetSetup.swift in Sources */,
 				90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */,
 				90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */,
 				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
@@ -419,6 +439,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90FBC3F429DDE2730081B43C /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90FBC3F529DDE2730081B43C /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90FBC3F429DDE2730081B43C /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90715B8E29DCC10100F533C3 /* Project object */;
 }

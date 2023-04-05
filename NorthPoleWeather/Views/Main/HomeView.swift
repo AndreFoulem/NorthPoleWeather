@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import BottomSheet
 
 struct HomeView: View {
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
+  
     var body: some View {
       NavigationView {
         ZStack {
@@ -37,6 +40,13 @@ struct HomeView: View {
           }//vs
           .padding(.top, 51)
           
+          // MARK: Bottom Sheet
+          BottomSheetView(position: $bottomSheetPosition) {
+             Text(bottomSheetPosition.rawValue.formatted())
+          } content: {
+//              ForecastView()
+          }
+
           // MARK: Tab Bar
           NPTabBar(action: {})
           
