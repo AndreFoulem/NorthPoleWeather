@@ -13,6 +13,7 @@
 		90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715B9D29DCC10200F533C3 /* Assets.xcassets */; };
 		90715BA129DCC10200F533C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715BA029DCC10200F533C3 /* Preview Assets.xcassets */; };
 		90715BB029DCD5C400F533C3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715BAF29DCD5C400F533C3 /* Color+.swift */; };
+		90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		90715B9D29DCC10200F533C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90715BA029DCC10200F533C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90715BAF29DCD5C400F533C3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				90715BAA29DCD52D00F533C3 /* Main */,
-				90715BAC29DCD54000F533C3 /* Nav  */,
+				90715BAC29DCD54000F533C3 /* Navigation */,
 				90715BAE29DCD55E00F533C3 /* Components */,
 				90715BAD29DCD55100F533C3 /* Details */,
 			);
@@ -108,11 +110,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		90715BAC29DCD54000F533C3 /* Nav  */ = {
+		90715BAC29DCD54000F533C3 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */,
 			);
-			path = "Nav ";
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		90715BAD29DCD55100F533C3 /* Details */ = {
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */,
+				90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */,
 				90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */,
 				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
