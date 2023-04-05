@@ -10,6 +10,7 @@ import BottomSheet
 
 struct HomeView: View {
     @State var bottomSheetPosition: BottomSheetPosition = .middle
+    @State var bottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
   
     var body: some View {
       NavigationView {
@@ -42,9 +43,12 @@ struct HomeView: View {
           
           // MARK: Bottom Sheet
           BottomSheetView(position: $bottomSheetPosition) {
-             Text(bottomSheetPosition.rawValue.formatted())
+             Text(bottomSheetTranslation.formatted())
           } content: {
               ForecastView()
+          }
+          .onBottomSheetDrag { translation in
+            bottomSheetTranslation = translation
           }
 
           // MARK: Tab Bar
