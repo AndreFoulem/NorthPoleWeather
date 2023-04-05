@@ -14,6 +14,7 @@
 		90715BA129DCC10200F533C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715BA029DCC10200F533C3 /* Preview Assets.xcassets */; };
 		90715BB029DCD5C400F533C3 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715BAF29DCD5C400F533C3 /* Color+.swift */; };
 		90FBC3F029DDD3C40081B43C /* NPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */; };
+		90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBC3F229DDD8F10081B43C /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		90715BA029DCC10200F533C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90715BAF29DCD5C400F533C3 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTabBar.swift; sourceTree = "<group>"; };
+		90FBC3F229DDD8F10081B43C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */,
 				90715BA729DCD4EE00F533C3 /* Views */,
 				90715BA829DCD4F800F533C3 /* Models */,
+				90FBC3F129DDD8DF0081B43C /* Utils */,
 				90715BA929DCD4FB00F533C3 /* Extensions */,
 				90715B9D29DCC10200F533C3 /* Assets.xcassets */,
 				90715B9F29DCC10200F533C3 /* Preview Content */,
@@ -130,6 +133,14 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		90FBC3F129DDD8DF0081B43C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				90FBC3F229DDD8F10081B43C /* Shapes.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */,
 				90715BB029DCD5C400F533C3 /* Color+.swift in Sources */,
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
+				90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
