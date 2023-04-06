@@ -17,16 +17,28 @@ struct ForecastView: View {
           // MARK: Segmented Control
           SegmentedControl(selection: $selection)
           
-          // MARK: Forecast Cards
-          ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-              ForEach(Forecast.hourly) { forecast in
-                ForecastCard(forecast: forecast, forecastPeriod: .hourly)
+            // MARK: Forecast Cards
+            ScrollView(.horizontal, showsIndicators: false) {
+              HStack(spacing: 12) {
+                  if selection == 0 {
+                    ForEach(Forecast.hourly) { forecast in
+                      ForecastCard(forecast: forecast, forecastPeriod: .hourly)
+                    }
+                    .transition(.offset(x: -440))
+                  } else {
+                    ForEach(Forecast.weekly) { forecast in
+                      ForecastCard(forecast: forecast, forecastPeriod: .daily)
+                    }
+                    .transition(.offset(x: 440))
+                  }
               }
+              .padding(.vertical, 12)
             }
-            .padding(.vertical, 12)
-          }
-          .padding(.horizontal, 20)
+            .padding(.horizontal, 20)
+          
+           // MARK: Forecast Widgets
+          Image("Forecast Widgets")
+            .opacity(bottomSheetTranslationProrated)
         }
       }
       .backgroundBlur(radius: 16, opaque: true)
