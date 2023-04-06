@@ -42,6 +42,7 @@ struct NPTabBar: View {
         .font(.title2)
         .foregroundColor(.white)
         .padding(EdgeInsets(top: 20, leading: 32, bottom: 24, trailing: 32))
+   
       }
       .frame(maxHeight: .infinity, alignment: .bottom)
       .ignoresSafeArea()

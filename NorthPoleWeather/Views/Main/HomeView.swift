@@ -21,7 +21,10 @@ struct HomeView: View {
       NavigationView {
         
         GeometryReader { geometry in
-          let screenHeight = geometry.size.height + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom
+          let screenHeight = geometry.size.height
+//          + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom
+          
+          let imageOffset = (screenHeight / 2) + 36
           
           ZStack {
             //MARK: Background Color
@@ -32,11 +35,13 @@ struct HomeView: View {
             Image("Background")
               .resizable()
               .ignoresSafeArea()
+              .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
             //MARK: House Img
             Image("House")
               .frame(maxHeight: .infinity, alignment: .top)
               .padding(.top, 257)
+              .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
             VStack {
               Text("Montreal")
