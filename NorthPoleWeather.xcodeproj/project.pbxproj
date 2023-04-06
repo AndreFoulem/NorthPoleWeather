@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		900E743C29DF254600369FE3 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E743B29DF254600369FE3 /* SegmentedControl.swift */; };
+		900E743E29DF3BAE00369FE3 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E743D29DF3BAE00369FE3 /* ForecastModel.swift */; };
 		90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90271CE629DCD7B9002DB4CF /* HomeView.swift */; };
 		90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */; };
 		90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9B29DCC10100F533C3 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		900E743B29DF254600369FE3 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		900E743D29DF3BAE00369FE3 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		90271CE629DCD7B9002DB4CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		90715B9629DCC10100F533C3 /* NorthPoleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthPoleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthPoleWeatherApp.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		90715BA829DCD4F800F533C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				900E743D29DF3BAE00369FE3 /* ForecastModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */,
 				90D0D2B929DE0D7E00332A54 /* Blur.swift in Sources */,
 				90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */,
+				900E743E29DF3BAE00369FE3 /* ForecastModel.swift in Sources */,
 				90FBC3FE29DDE54B0081B43C /* ForecastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
