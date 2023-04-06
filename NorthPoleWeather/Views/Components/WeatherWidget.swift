@@ -17,7 +17,7 @@ struct WeatherDetailWidget: View {
           .frame(width: 342, height: 174)
 
         // MARK: Weather Content
-        HStack(alignment: .bottom) {
+        HStack(alignment:.bottom) {
           VStack(alignment: .leading, spacing: 8) {
               // MARK: Forecast Temp
               Text("\(forecast.temperature)°")
@@ -34,6 +34,7 @@ struct WeatherDetailWidget: View {
               }
           
           }//vs
+         
           
           VStack(alignment: .trailing, spacing: 0) {
             Image("\(forecast.icon) large")
