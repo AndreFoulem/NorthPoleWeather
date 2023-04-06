@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct NavBar: View {
+  @Environment(\.dismiss) private var dismiss
     var body: some View {
       VStack(spacing: 8) {
         HStack {
           // MARK: Back Btn
           Button {
-            
+            dismiss()
           } label: {
             HStack(spacing: 5) {
               // MARK: Back Btn -> icon
