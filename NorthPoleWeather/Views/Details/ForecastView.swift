@@ -13,9 +13,20 @@ struct ForecastView: View {
   
     var body: some View {
       ScrollView {
-        VStack(spacing: 0) {
+        VStack {
           // MARK: Segmented Control
           SegmentedControl(selection: $selection)
+          
+          // MARK: Forecast Cards
+          ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+              ForEach(Forecast.hourly) { forecast in
+                ForecastCard(forecast: forecast, forecastPeriod: .hourly)
+              }
+            }
+            .padding(.vertical, 12)
+          }
+          .padding(.horizontal, 20)
         }
       }
       .backgroundBlur(radius: 16, opaque: true)
