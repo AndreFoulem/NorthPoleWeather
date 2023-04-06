@@ -22,19 +22,19 @@ struct WeatherDetailWidget: View {
               // MARK: Forecast Temp
               Text("\(forecast.temperature)°")
                 .font(.system(size: 64))
-            VStack(alignment: .leading) {
-                // MARK: Forecast Temp Range
-                Text("H:\(forecast.high)° L:\(forecast.low)°")
-                  .font(.footnote)
-                  .foregroundColor(.secondary)
-                
-                //MARK: Forecast Location
-                Text(forecast.location)
-                  .lineLimit(1)
-              }
-          
+      
+              // MARK: Forecast Temp Range
+              Text("H:\(forecast.high)° L:\(forecast.low)°")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+              
+              //MARK: Forecast Location
+              Text(forecast.location)
+                .lineLimit(1)
+                .padding(.top, -10)
           }//vs
          
+          Spacer()
           
           VStack(alignment: .trailing, spacing: 0) {
             Image("\(forecast.icon) large")
