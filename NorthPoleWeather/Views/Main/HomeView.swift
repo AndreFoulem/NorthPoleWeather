@@ -9,6 +9,7 @@ import SwiftUI
 import BottomSheet
 
 struct HomeView: View {
+    @State var sheetIsMiddle = true
     @State var bottomSheetPosition: BottomSheetPosition = .middle
     @State var bottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
   
@@ -44,6 +45,8 @@ struct HomeView: View {
               .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
             VStack {
+              Text("\(bottomSheetTranslationProrated)")
+              Text(sheetIsMiddle.description)
               Text("Montreal")
                 .font(.largeTitle)
               VStack {
@@ -63,11 +66,28 @@ struct HomeView: View {
             }
             .onBottomSheetDrag { translation in
               bottomSheetTranslation = translation / screenHeight
+              if bottomSheetPosition == .top {
+                sheetIsMiddle = false
+              }
+              if bottomSheetPosition == .middle {
+                sheetIsMiddle = true
+              }
+//              if bottomSheetTranslationProrated >= 1.228538 {
+//                sheetIsMiddle = false
+//              }
+//              if bottomSheetTranslationProrated <= 0.106009 {
+//                sheetIsMiddle = true
+//              }
             }
-
             // MARK: Tab Bar
             NPTabBar(action: {
-              bottomSheetPosition = .top
+              if sheetIsMiddle {
+                bottomSheetPosition = .top
+                sheetIsMiddle = false
+              } else if !sheetIsMiddle {
+                bottomSheetPosition = .middle
+                sheetIsMiddle = true
+              }
             })
             
           }//zstack

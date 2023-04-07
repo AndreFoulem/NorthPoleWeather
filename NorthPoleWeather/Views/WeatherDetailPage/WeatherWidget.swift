@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WeatherWidget: View {
    var forecast: Forecast
+  
     var body: some View {
       ZStack(alignment: .bottom) {
         // MARK: Trapezoid Shape
