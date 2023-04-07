@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WeatherDetailWidget: View {
+struct WeatherWidget: View {
    var forecast: Forecast
     var body: some View {
       ZStack(alignment: .bottom) {
@@ -59,7 +59,7 @@ struct WeatherDetailWidget: View {
 
 struct WeatherDetailWidget_Previews: PreviewProvider {
     static var previews: some View {
-      WeatherDetailWidget(forecast: Forecast.cities[0])
+      WeatherWidget(forecast: Forecast.cities[0])
         .preferredColorScheme(.dark)
     }
 }

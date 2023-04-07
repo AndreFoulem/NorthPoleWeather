@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct WeatherDetailView: View {
+struct WeatherContentView: View {
+    @State private var searchText = ""
+  
     var body: some View {
       ZStack {
         // MARK: Background Detail
@@ -18,7 +20,7 @@ struct WeatherDetailView: View {
         ScrollView(showsIndicators: false) {
           VStack(spacing: 20) {
             ForEach(Forecast.cities) { forecast in
-              WeatherDetailWidget(forecast: forecast)
+              WeatherWidget(forecast: forecast)
             }
           }
         }
@@ -37,7 +39,9 @@ struct WeatherDetailView: View {
 
 struct WeatherDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherDetailView()
-        .preferredColorScheme(.dark)
+      NavigationView {
+        WeatherContentView()
+          .preferredColorScheme(.dark)
+      }
     }
 }

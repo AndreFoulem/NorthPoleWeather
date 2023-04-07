@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForecastView: View {
+struct ForecastContentView: View {
     var bottomSheetTranslationProrated: CGFloat = 1
     @State private var selection = 0
   
@@ -22,6 +22,7 @@ struct ForecastView: View {
               HStack(spacing: 12) {
                   if selection == 0 {
                     ForEach(Forecast.hourly) { forecast in
+// i ForecastCard
                       ForecastCard(forecast: forecast, forecastPeriod: .hourly)
                     }
                     .transition(.offset(x: -440))
@@ -72,7 +73,7 @@ struct ForecastView: View {
 
 struct ForecastView_Previews: PreviewProvider {
     static var previews: some View {
-        ForecastView()
+        ForecastContentView()
         .background(Color.background)
         .preferredColorScheme(.dark)
     }

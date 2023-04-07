@@ -59,7 +59,7 @@ struct HomeView: View {
             BottomSheetView(position: $bottomSheetPosition) {
                Text(bottomSheetTranslationProrated.formatted())
             } content: {
-                ForecastView()
+                ForecastContentView()
             }
             .onBottomSheetDrag { translation in
               bottomSheetTranslation = translation / screenHeight

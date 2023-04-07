@@ -33,7 +33,7 @@ struct NPTabBar: View {
           Spacer()
             // MARK: Nav Button
           NavigationLink {
-            WeatherDetailView()
+            WeatherContentView()
           } label: {
             Image(systemName: "list.star")
               .frame(width: 44, height: 44)
