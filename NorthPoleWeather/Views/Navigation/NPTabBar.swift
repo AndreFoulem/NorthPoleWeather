@@ -28,7 +28,9 @@ struct NPTabBar: View {
             action()
           } label: {
             Image(systemName: "mappin.and.ellipse")
+              .font(.title)
               .frame(width: 44, height: 44)
+            
           }
           Spacer()
             // MARK: Nav Button
@@ -36,12 +38,15 @@ struct NPTabBar: View {
             WeatherContentView()
           } label: {
             Image(systemName: "list.star")
+              .font(.title)
               .frame(width: 44, height: 44)
           }
         }//hs
         .font(.title2)
         .foregroundColor(.white)
         .padding(EdgeInsets(top: 20, leading: 32, bottom: 24, trailing: 32))
+        .backgroundBlur(radius: 40)
+    
    
       }
       .frame(maxHeight: .infinity, alignment: .bottom)

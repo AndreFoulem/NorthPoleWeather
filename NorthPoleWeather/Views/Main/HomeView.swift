@@ -25,7 +25,7 @@ struct HomeView: View {
           let screenHeight = geometry.size.height
 //          + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom
           
-          let imageOffset = (screenHeight / 2) + 36
+          let imageOffset = (screenHeight / 2) + 120
           
           ZStack {
             //MARK: Background Color
@@ -39,15 +39,15 @@ struct HomeView: View {
               .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
             //MARK: House Img
-            Image("House")
-              .frame(maxHeight: .infinity, alignment: .top)
-              .padding(.top, 257)
-              .offset(y: -bottomSheetTranslationProrated * imageOffset)
+//            Image("House")
+//              .frame(maxHeight: .infinity, alignment: .top)
+//              .padding(.top, 257)
+//              .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
-            VStack {
-              Text("\(bottomSheetTranslationProrated)")
-              Text(sheetIsMiddle.description)
-              Text("Montreal")
+            VStack(spacing: -8) {
+//              Text("\(bottomSheetTranslationProrated)")
+//              Text(sheetIsMiddle.description)
+              Text("North Pole")
                 .font(.largeTitle)
               VStack {
                 Text(mainString)
@@ -56,7 +56,7 @@ struct HomeView: View {
               }
               Spacer()
             }//vs
-            .padding(.top, 51)
+            .padding(.top, 30)
             
             // MARK: Bottom Sheet
             BottomSheetView(position: $bottomSheetPosition) {
@@ -72,12 +72,6 @@ struct HomeView: View {
               if bottomSheetPosition == .middle {
                 sheetIsMiddle = true
               }
-//              if bottomSheetTranslationProrated >= 1.228538 {
-//                sheetIsMiddle = false
-//              }
-//              if bottomSheetTranslationProrated <= 0.106009 {
-//                sheetIsMiddle = true
-//              }
             }
             // MARK: Tab Bar
             NPTabBar(action: {

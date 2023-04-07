@@ -40,26 +40,17 @@ struct ForecastContentView: View {
            // MARK: Forecast Widgets
           Image("Forecast Widgets")
             .opacity(bottomSheetTranslationProrated)
-            .padding(.top, 60)
+            .padding(.top, 20)
         }
       }
-      .backgroundBlur(radius: 16, opaque: true)
+      .backgroundBlur(radius: 20, opaque: true)
       .background(Color.bottomSheetBackground)
       .clipShape(RoundedRectangle(cornerRadius: 44))
       
       // MARK: // top border inner shadow
       .innerShadow(shape: RoundedRectangle(cornerRadius: 44), color: Color.bottomSheetBorderMiddle, lineWidth: 1, offsetX: 0, offsetY: 1, blur: 0, blendMode: .overlay, opacity: 1)
       
-//      .overlay {
-//        // MARK: Bottom Sheet Separator
-//        Divider()
-//          .blendMode(.overlay)
-//          .background(Color.bottomSheetBorderTop)
-//          .frame(maxHeight: .infinity, alignment: .top)
-//          .clipShape(RoundedRectangle(cornerRadius: 44))
-//      }
-      
-        // MARK: Drag Indicator
+      // MARK: Drag Indicator
       .overlay {
         RoundedRectangle(cornerRadius: 10)
           .fill(.black.opacity(0.3))
