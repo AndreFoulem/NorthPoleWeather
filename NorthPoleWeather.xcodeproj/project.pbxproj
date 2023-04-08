@@ -14,6 +14,7 @@
 		902C406729DF51F90048BCAC /* NPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406629DF51F90048BCAC /* NPNavigationBar.swift */; };
 		902C406929DF54300048BCAC /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406829DF54300048BCAC /* WeatherContentView.swift */; };
 		902C406B29DF57F10048BCAC /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406A29DF57F10048BCAC /* WeatherWidget.swift */; };
+		9065E93029E0EE0200D07C49 /* TiltWarp-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9065E92F29E0EE0200D07C49 /* TiltWarp-Regular.ttf */; };
 		90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */; };
 		90715B9C29DCC10100F533C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9B29DCC10100F533C3 /* ContentView.swift */; };
 		90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90715B9D29DCC10200F533C3 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 		902C406629DF51F90048BCAC /* NPNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationBar.swift; sourceTree = "<group>"; };
 		902C406829DF54300048BCAC /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		902C406A29DF57F10048BCAC /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
+		9065E92F29E0EE0200D07C49 /* TiltWarp-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TiltWarp-Regular.ttf"; sourceTree = "<group>"; };
+		9065E93129E0EED300D07C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		90715B9629DCC10100F533C3 /* NorthPoleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthPoleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthPoleWeatherApp.swift; sourceTree = "<group>"; };
 		90715B9B29DCC10100F533C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,12 +103,14 @@
 		90715B9829DCC10100F533C3 /* NorthPoleWeather */ = {
 			isa = PBXGroup;
 			children = (
+				9065E93129E0EED300D07C49 /* Info.plist */,
 				90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */,
 				90715BA729DCD4EE00F533C3 /* Views */,
 				90715BA829DCD4F800F533C3 /* Models */,
 				9047805329DF97CD006D9784 /* Library */,
 				90FBC3F729DDE30F0081B43C /* Packages */,
 				90715B9D29DCC10200F533C3 /* Assets.xcassets */,
+				9065E92F29E0EE0200D07C49 /* TiltWarp-Regular.ttf */,
 				90715B9F29DCC10200F533C3 /* Preview Content */,
 			);
 			path = NorthPoleWeather;
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90715BA129DCC10200F533C3 /* Preview Assets.xcassets in Resources */,
+				9065E93029E0EE0200D07C49 /* TiltWarp-Regular.ttf in Resources */,
 				90715B9E29DCC10200F533C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +420,7 @@
 				DEVELOPMENT_TEAM = S87U79A5HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NorthPoleWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,6 +450,7 @@
 				DEVELOPMENT_TEAM = S87U79A5HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NorthPoleWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

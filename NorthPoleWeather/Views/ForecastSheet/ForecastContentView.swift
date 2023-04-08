@@ -37,10 +37,14 @@ struct ForecastContentView: View {
             }
             .padding(.horizontal, 20)
           
+          Text("WIDGETS")
+            .font(.custom("TiltWarp-Regular", size: 18))
+            .padding(.top, 20)
            // MARK: Forecast Widgets
           Image("Forecast Widgets")
             .opacity(bottomSheetTranslationProrated)
-            .padding(.top, 20)
+          
+        
         }
       }
       .backgroundBlur(radius: 20, opaque: true)

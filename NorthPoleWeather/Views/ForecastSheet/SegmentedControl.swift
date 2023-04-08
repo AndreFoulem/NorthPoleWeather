@@ -33,7 +33,7 @@ struct SegmentedControl: View {
           }
           .frame(maxWidth: .infinity)
         }//hs
-        .font(.subheadline.weight(.semibold))
+        .font(.custom("TiltWarp-Regular", size: 18))
         .foregroundColor(Color("DarkText"))
         .padding(.bottom, 6)
         .padding(.top, 4)

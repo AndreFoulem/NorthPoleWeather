@@ -26,7 +26,7 @@ struct NavBar: View {
               
               // MARK: Back Btn -> label
               Text("Weather")
-                .font(.title)
+                .font(.custom("TiltWarp-Regular", size: 24))
                 .foregroundColor(.primary)
             }
             .frame(height: 44)
@@ -47,6 +47,7 @@ struct NavBar: View {
               .padding()
             TextField("Search for a city or airport", text: $searchText )
               .foregroundColor(.white)
+              .padding(.bottom, 6)
           }
         .foregroundColor(.secondary)
         .padding(.horizontal, 6)
@@ -56,13 +57,14 @@ struct NavBar: View {
         .innerShadow(shape: RoundedRectangle(cornerRadius: 10), color: .black.opacity(0.25), lineWidth: 210, offsetX: 0, offsetY: 2, blur: 2, blendMode: .overlay, opacity: 0)
         
       }//vs
-      .frame(height: 106, alignment: .top)
+      .frame(height: 116, alignment: .top)
       .padding(.horizontal, 20)
       .padding(.top, 52)
       .backgroundBlur(radius: 20, opaque: true)
       .background(Color.navBarBackground)
       .frame(maxHeight: .infinity, alignment: .top)
       .ignoresSafeArea()
+ 
       
     }//body
 }

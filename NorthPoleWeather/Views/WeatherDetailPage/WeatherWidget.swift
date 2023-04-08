@@ -22,15 +22,16 @@ struct WeatherWidget: View {
           VStack(alignment: .leading, spacing: 8) {
               // MARK: Forecast Temp
               Text("\(forecast.temperature)°")
-                .font(.system(size: 64))
+              .font(.custom("TiltWarp-Regular", size: 54))
       
               // MARK: Forecast Temp Range
               Text("H:\(forecast.high)° L:\(forecast.low)°")
-                .font(.footnote)
+              .font(.custom("TiltWarp-Regular", size: 18))
                 .foregroundColor(.secondary)
               
               //MARK: Forecast Location
               Text(forecast.location)
+              .font(.custom("TiltWarp-Regular", size: 18))
                 .lineLimit(1)
                 .padding(.top, -10)
           }//vs
@@ -44,7 +45,7 @@ struct WeatherWidget: View {
             
             //MARK: Weather percentage
             Text(forecast.weather.rawValue)
-              .font(.footnote)
+              .font(.custom("TiltWarp-Regular", size: 16))
               .padding(.trailing, 24)
           }//vs
         }//hs

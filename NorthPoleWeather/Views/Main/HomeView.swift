@@ -45,14 +45,12 @@ struct HomeView: View {
 //              .offset(y: -bottomSheetTranslationProrated * imageOffset)
             
             VStack(spacing: -8) {
-//              Text("\(bottomSheetTranslationProrated)")
-//              Text(sheetIsMiddle.description)
               Text("North Pole")
-                .font(.largeTitle)
-              VStack {
+                .font(.custom("TiltWarp-Regular", size: 36))
+              VStack(alignment: .leading) {
                 Text(mainString)
-                Text("H:24°  L:18°")
-                  .font(.title3.weight(.semibold))
+                Text("  H:24°   L:18°")
+                  .font(.custom("TiltWarp-Regular", size: 18))
               }
               Spacer()
             }//vs
@@ -60,7 +58,7 @@ struct HomeView: View {
             
             // MARK: Bottom Sheet
             BottomSheetView(position: $bottomSheetPosition) {
-               Text(bottomSheetTranslationProrated.formatted())
+            //               Text(bottomSheetTranslationProrated.formatted())
             } content: {
                 ForecastContentView()
             }
@@ -99,7 +97,7 @@ extension HomeView {
     var string = AttributedString("19°" + "\n " + "Mostly Clear")
     
     if let temp = string.range(of: "19°") {
-      string[temp].font = .system(size: 96, weight: .thin)
+      string[temp].font = .custom("TiltWarp-Regular", size: 80)
       string[temp].foregroundColor = .primary
     }
     if let pipe = string.range(of: " | ") {
@@ -107,7 +105,7 @@ extension HomeView {
       string[pipe].foregroundColor = .secondary
     }
     if let weather = string.range(of: "Mostly Clear") {
-      string[weather].font = .title3.weight(.semibold)
+      string[weather].font = .custom("TiltWarp-Regular", size: 18)
       string[weather].foregroundColor = .secondary
     }
     
