@@ -48,9 +48,11 @@ struct HomeView: View {
               Text("North Pole")
                 .font(.custom("TiltWarp-Regular", size: 36))
               VStack(alignment: .leading) {
-                Text(mainString)
-                Text("  H:24°   L:18°")
-                  .font(.custom("TiltWarp-Regular", size: 18))
+                if sheetIsMiddle {
+                    Text(mainString)
+                    Text(" H:-10°  L:-20°")
+                      .font(.custom("TiltWarp-Regular", size: 18))
+                  }
               }
               Spacer()
             }//vs
@@ -94,9 +96,9 @@ struct HomeView: View {
 extension HomeView {
   
   private var mainString: AttributedString {
-    var string = AttributedString("19°" + "\n " + "Mostly Clear")
+    var string = AttributedString("-19°" + "\n " + "Mostly Clear")
     
-    if let temp = string.range(of: "19°") {
+    if let temp = string.range(of: "-19°") {
       string[temp].font = .custom("TiltWarp-Regular", size: 80)
       string[temp].foregroundColor = .primary
     }

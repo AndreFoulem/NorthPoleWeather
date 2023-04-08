@@ -28,7 +28,7 @@ extension Color {
   
   //MARK: Colors
   static let tabBarBorder = Color("Tab Bar Border").opacity(0.5)
-  static let forecastCardBackground = Color("Forecast Card Background")
+  static let forecastCardBackground = Color("Forecast Card Background").opacity(0.8)
   static let probabilityText = Color("Probability Text")
   static let searchBar = Color("Search Bar")
 }

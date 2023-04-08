@@ -47,7 +47,7 @@ struct ForecastContentView: View {
         
         }
       }
-      .backgroundBlur(radius: 20, opaque: true)
+      .backgroundBlur(radius: 16, opaque: true)
       .background(Color.bottomSheetBackground)
       .clipShape(RoundedRectangle(cornerRadius: 44))
       

@@ -46,13 +46,15 @@ struct NavBar: View {
               .foregroundColor(.white)
               .padding()
             TextField("Search for a city or airport", text: $searchText )
+              .font(.custom("TiltWarp-Regular", size: 18))
               .foregroundColor(.white)
-              .padding(.bottom, 6)
+              .padding(.bottom, 2)
+          
           }
         .foregroundColor(.secondary)
         .padding(.horizontal, 6)
         .padding(.vertical, 7)
-        .frame(height: 36, alignment: .leading)
+        .frame(height: 40, alignment: .leading)
         .background(Color.searchBar, in: RoundedRectangle(cornerRadius: 10))
         .innerShadow(shape: RoundedRectangle(cornerRadius: 10), color: .black.opacity(0.25), lineWidth: 210, offsetX: 0, offsetY: 2, blur: 2, blendMode: .overlay, opacity: 0)
         
