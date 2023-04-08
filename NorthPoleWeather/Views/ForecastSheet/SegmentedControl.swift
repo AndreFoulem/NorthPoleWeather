@@ -19,6 +19,7 @@ struct SegmentedControl: View {
             }
           } label: {
             Text("Hourly Forecast")
+        
           }
           .frame(maxWidth: .infinity)
           
@@ -28,15 +29,18 @@ struct SegmentedControl: View {
             }
           } label: {
             Text("Weekly Forecast")
+            
           }
           .frame(maxWidth: .infinity)
         }//hs
         .font(.subheadline.weight(.semibold))
-        .foregroundColor(.secondary)
+        .foregroundColor(Color("DarkText"))
+        .padding(.bottom, 6)
+        .padding(.top, 4)
         
         // MARK: Separator
         Divider()
-          .background(.white.opacity(0.8))
+          .background(.white.opacity(0.9))
           .blendMode(.overlay)
           .shadow(color: .black.opacity(0.2), radius: 0, x: 0, y: 1)
           .blendMode(.overlay)
@@ -44,7 +48,7 @@ struct SegmentedControl: View {
             // MARK: Underline
             HStack {
               Divider()
-              .frame(width: UIScreen.main.bounds.width / 2, height: 3)
+              .frame(width: UIScreen.main.bounds.width / 2, height: 5)
               .background(Color.underline)
             .blendMode(.overlay)
             }

@@ -11,7 +11,7 @@
 		900E743E29DF3BAE00369FE3 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E743D29DF3BAE00369FE3 /* ForecastModel.swift */; };
 		900E744229DF3F1000369FE3 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E744129DF3F1000369FE3 /* ForecastCard.swift */; };
 		90271CE729DCD7B9002DB4CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90271CE629DCD7B9002DB4CF /* HomeView.swift */; };
-		902C406729DF51F90048BCAC /* NPNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406629DF51F90048BCAC /* NPNavBar.swift */; };
+		902C406729DF51F90048BCAC /* NPNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406629DF51F90048BCAC /* NPNavigationBar.swift */; };
 		902C406929DF54300048BCAC /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406829DF54300048BCAC /* WeatherContentView.swift */; };
 		902C406B29DF57F10048BCAC /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C406A29DF57F10048BCAC /* WeatherWidget.swift */; };
 		90715B9A29DCC10100F533C3 /* NorthPoleWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90715B9929DCC10100F533C3 /* NorthPoleWeatherApp.swift */; };
@@ -33,7 +33,7 @@
 		900E743D29DF3BAE00369FE3 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		900E744129DF3F1000369FE3 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
 		90271CE629DCD7B9002DB4CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		902C406629DF51F90048BCAC /* NPNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavBar.swift; sourceTree = "<group>"; };
+		902C406629DF51F90048BCAC /* NPNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPNavigationBar.swift; sourceTree = "<group>"; };
 		902C406829DF54300048BCAC /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		902C406A29DF57F10048BCAC /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		90715B9629DCC10100F533C3 /* NorthPoleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthPoleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				90FBC3EF29DDD3C40081B43C /* NPTabBar.swift */,
-				902C406629DF51F90048BCAC /* NPNavBar.swift */,
+				902C406629DF51F90048BCAC /* NPNavigationBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				90D0D2B929DE0D7E00332A54 /* Blur.swift in Sources */,
 				90FBC3F329DDD8F10081B43C /* Shapes.swift in Sources */,
 				902C406B29DF57F10048BCAC /* WeatherWidget.swift in Sources */,
-				902C406729DF51F90048BCAC /* NPNavBar.swift in Sources */,
+				902C406729DF51F90048BCAC /* NPNavigationBar.swift in Sources */,
 				902C406929DF54300048BCAC /* WeatherContentView.swift in Sources */,
 				900E743E29DF3BAE00369FE3 /* ForecastModel.swift in Sources */,
 				90FBC3FE29DDE54B0081B43C /* ForecastContentView.swift in Sources */,

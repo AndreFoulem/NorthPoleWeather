@@ -21,7 +21,7 @@ struct WeatherContentView: View {
   var body: some View {
     ZStack {
         // MARK: Background Detail
-      Color.background
+      Color.backgroundGray
         .ignoresSafeArea()
       
         // MARK: Weather Widgets
