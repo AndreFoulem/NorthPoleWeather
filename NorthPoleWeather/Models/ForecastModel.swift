@@ -43,8 +43,6 @@ struct Forecast: Identifiable {
         return "Sun cloud angled rain"
       case .sunny:
         return "Sun"
-      case .tornado:
-        return "Tornado"
       case .windy:
         return "Moon cloud fast wind"
     }
