@@ -18,7 +18,6 @@ enum Weather: String {
   case rainy = "Mid Rain"
   case stormy = "Showers"
   case sunny = "Sunny"
-  case tornado = "Tornado"
   case windy = "Fast Wind"
 }
 
