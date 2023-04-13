@@ -75,7 +75,7 @@ extension Forecast {
     Forecast(date: .now, weather: .rainy, probability: 10, temperature: 19, high: 24, low: 18, location: "Christmas Tree"),
     Forecast(date: .now, weather: .windy, probability: 0, temperature: 20, high: 21, low: 19, location: "North Pole"),
     Forecast(date: .now, weather: .stormy, probability: 0, temperature: 13, high: 16, low: 8, location: "Santa's House"),
-    Forecast(date: .now, weather: .tornado, probability: 0, temperature: 23, high: 26, low: 16, location: "Toy Factory")
+    Forecast(date: .now, weather: .windy, probability: 0, temperature: 23, high: 26, low: 16, location: "Toy Factory")
   ]
 }
 
